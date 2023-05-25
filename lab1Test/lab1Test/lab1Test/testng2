@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite 2" parallel="tests">
+    <test name="Test 3">
+        <groups>
+            <run>
+                <exclude name="group2" />
+            </run>
+        </groups>
+        <classes>
+            <class name="lab2Test" />
+        </classes>
+    </test>
+    <test name="Test 4">
+        <groups>
+            <run>
+                <exclude name="group1" />
+            </run>
+        </groups>
+        <classes>
+            <class name="lab2Test" />
+        </classes>
+    </test>
+</suite>
